@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: serif,sans-serif; 
+}
+html,body{
+    direction: rtl;
+	--most: #66bb88;/*#66bb88;#c2a042*/ 
+	--less: #474749;/*#474749;*/
+	--p: #fff8dc;
+	background-color: var(--less);
+}
+body{
+	margin-top: 100px;
+}
+/***************************************************************
+                            HEADER                           
+***************************************************************/
+header{
+    display: flex;
+    flex-direction: column;
+}
+/***************************************************************
+                            showcase                           
+***************************************************************/
+#showcase{
+    background-color: var(--most);
+    height: 500px;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#showcase h1{
+    font-size: 42pt;
+}
+#showcase #span1{
+    color: white;
+}
+#showcase #span2{
+    color: red;
+}
+#showcase #span3{
+    color: green;
+}
+#showcase p{
+    font-size: 13pt;
+    font-weight: 700;
+	color: var(--less);
+}
+#showcase input{
+    width: 450px;
+    height: 45px;    
+    margin: 0px;
+	box-shadow: 10px 5px rgba(40,40,40,0.2);
+}
+#showcase button{
+    background-color: var(--less);
+    border-width: 0px;
+    width: 100px;
+    height: 43px;
+    color: var(--most);
+    font-weight: 900;
+    font-size: 11pt;
+    margin-right: -5px;
+}
+#showcase button:hover{
+    background-color: #474790;
+    color: orange;
+}
+#showcase h1,p,form{
+    padding: 15px;
+}
+#little-info-lines{
+    display: inline-flex;
+}
+#little-info-lines p{
+    margin: 10px 5px;
+    padding: 5px 20px;
+    font-size: 10pt;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    border: 1px var(--less) solid;
+	box-shadow: 10px 5px rgba(40,40,40,0.2);
+	border-radius: 2px;
+}
+#little-info-lines p:hover{
+    background-color: #474790;
+    color: orange;
+}
+/***************************************************************
+                            article                          
+***************************************************************/
+
+/************************************
+              #work_info_cards
+************************************/
+#work_info_cards_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#work_info_cards{	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	padding: 5% 0px;
+	padding-bottom: 20px;
+	width: 90%;
+}
+.work_info_card{
+	background-color: var(--most);
+	margin: 20px;
+	padding-top: 10px;
+	padding: 10px 0px;
+	width: 25%;
+	border-radius: 5px;
+	box-shadow: 20px 5px rgba(40,40,40,0.2);
+}
+#work_info_cards>div>h1{
+	padding-top: 30px;
+}
+#work_info_cards>div>h1,p{
+	color: var(--p);
+}
+#work_info_cards img{
+	height: 200px;
+	width: 100%;
+}
+/************************************
+              how to start
+
+--------------//TODO//--------------
+-animate circles
+-change the pharagraph in th box
+------------------------------------
+************************************/
+#how_to_start{
+	display: flex;
+	flex-direction: column;
+}
+#how_to_start> h1{
+	font-size: 32pt;
+	letter-spacing: 1px;
+	margin: 40px 5%;
+	text-align: center;
+}
+#steps{
+	display: inline-flex;
+	justify-content: space-around;
+}
+#steps h1{
+	border: 1px var(--most) solid;
+	border-radius: 50%;
+	padding: 30px;
+	margin: 10px 2%;
+}
+#steps h1:hover{
+    background-color: #474790;
+    color: orange;
+	border-color: var(--less);
+}
+#how_to_start p{
+	text-align: center;
+	margin-top: 50px;
+	height: 100px;
+	width: 50%;
+	border: 1px var(--most) solid;
+	margin-left: auto;
+	margin-right: auto;
+    color: orange;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+/************************************
+            #start_class
+************************************/
+#start_class{
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0px;
+	justify-content: center;
+	align-items: center;
+}
+#start_class h1{
+	font-size: 32pt;
+	text-align: center;
+	padding: 30px 0px;
+}
+#join_class{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 90%;
+}
+#join_class img{ 
+	height: 200px;
+	width: 100%;
+}
+#join_class h2{
+	text-align: center;
+	padding: 20px 0px;
+}
+.start_class_card{
+	background-color: var(--most);
+	padding: 10px 0px;
+	border-radius: 5px;
+	box-shadow: 20px 5px rgba(40,40,40,0.2);
+	width: 25%;
+}
+/************************************
+             #top_watching
+************************************/
+#top_watching{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#top_watching h1{
+	padding: 100px 5%;
+	font-size: 26pt;
+	text-align: center;
+	padding-bottom: 0px;
+}
+#cases_container{	
+	padding: 5% 0px;	
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#case{
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	text-align: center;
+	padding: 10px 0px;
+	margin: 40px 10px;
+	background-color: var(--most);
+	border-radius: 5px;
+	box-shadow: 20px 5px rgba(40,40,40,0.2);
+}
+#case img{
+	height: 200px;
+	width: 100%;
+}
+/***************************************************************
+                        @media queries                           
+***************************************************************/
+@media screen and (max-width: 700px){
+	body{overflow-x: hidden;margin-top: 200px;}
+/************************************
+              showcase
+************************************/
+	#showcase{height: 300px; text-align: center;}
+	#showcase h1{font-size: 20pt;}
+	#showcase p{font-size: 11pt;}
+	#showcase input{width: 85vw; height: 30px;}
+	#showcase button{width: 85vw;height: 30px;margin-right: 0px;}
+	#showcase h1,p,form{padding: 10px;}	
+	#little-info-lines p{border-radius: 20px;}
+/************************************
+           work_info_cards
+************************************/
+	#work_info_cards{flex-direction: column;}
+	#work_info_cards h1{font-size: 13pt;}
+	#work_info_cards p{font-size: 11pt;}
+	.work_info_card{width: 90%;}
+/************************************
+           how_to_start
+************************************/
+	#how_to_start h1{font-size: 20pt;}
+/************************************
+           #start_class
+************************************/
+	#start_class h1{font-size: 20pt;}
+	#join_class{flex-direction: column;	text-align: center;align-items: center;}
+	.start_class_card{margin: 20px 0px; width: 90%;}
+/************************************
+             #top_watching
+************************************/	
+	#cases_container{padding: 3%;display: flex;flex-direction: column;align-items: center;}
+	#case{width: 90%; padding: 10px 0px; margin: 10px 0px;  align-items: center;}
+	#case img{height: 200px; width: 100%;}	
+}
+
+

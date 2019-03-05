@@ -1,0 +1,72 @@
+/***************************************************************
+                         article                      
+***************************************************************/
+article{
+	margin-top: 30px;
+}
+.big_title{
+	height: 250px; 
+	width: 100%;
+	color: var(--less);
+	background-color: white;
+	font-size: 34pt;
+	text-align: center;
+	padding-top: 90px;
+	margin: 30px 0px;
+	box-sizing: border-box;
+	text-shadow: 4px 5px rgba(40,40,40,0.2);
+	box-shadow: 0px 5px rgba(40,40,40,0.2);
+}
+#matiers{	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.subject{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 25%;
+	margin: 20px 0px;
+	box-shadow: 20px 5px rgba(40,40,40,0.2);
+}
+.subject h1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 100%;
+	background-color: white;
+	color: var(--less);
+	font-size: 18pt;
+	text-shadow: 4px 5px rgba(40,40,40,0.2);
+}
+.subject p{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 100%;
+	font-weight: 900;
+	border: 1px var(--most) solid;
+}
+.subject p:hover{
+	background-color: #474790 !important;
+    color: orange;
+}
+.subject p:nth-child(even){	
+	background-color: rgba(102, 187, 136,0.7);
+}
+.subject p:nth-child(odd){	
+	background-color: rgba(102, 187, 136,0.4);
+}
+/***************************************************************
+                      @media queries                      
+***************************************************************/
+@media screen and (max-width: 700px){
+	#matiers{flex-direction: column;align-items: center;}
+	.subject{width: 90%;}
+}

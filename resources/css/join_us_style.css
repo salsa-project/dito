@@ -1,0 +1,160 @@
+/***************************************************************
+                      #join_us_showcase                           
+***************************************************************/
+#join_us_showcase{
+    background-color: white;
+    height: 250px;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	box-shadow: 0px 10px rgba(40,40,40,0.2);
+}
+#join_us_showcase h1{
+	text-align: center;
+	padding-top: 90px;
+	font-size: 40pt;
+	font-weight: 900;	
+	color: var(--less);
+	text-shadow: 4px 5px rgba(40,40,40,0.2);
+}
+#offers{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 100px;
+}
+#offers button{
+	width: 100%;
+	border: 0px;
+	background-color: white;
+	height: 80px;
+	font-size: 18pt;
+	font-weight: 900;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#offers button:hover{
+	background-color: #474790;
+    color: orange;
+}
+/************************************
+           .free_offer
+************************************/
+#free_offer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	box-shadow: 10px 5px rgba(40,40,40,0.2);
+}
+#free_offer_head{
+	background-color: white;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--less);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+#free_offer p{
+	font-weight: 900;
+	text-align: center;
+	height: 50px;
+	background-color: var(--most);
+	color: var(--p);
+	width: 100%;
+	box-sizing: border-box;	
+	border-bottom: 2px var(--less) solid;
+}
+#free_offer p:hover{
+	background-color: #474790;
+    color: orange;
+}
+#free_p2,#free_p3,#free_p5{
+	background-color: rgb(180,30,10) !important;
+}
+
+/************************************
+           .silver_offer
+************************************/
+#silver_offer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	box-shadow: 10px 5px rgba(40,40,40,0.2);
+}
+#silver_offer_head{
+	background-color: white;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--less);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+#silver_offer p{
+	font-weight: 900;
+	text-align: center;
+	height: 50px;
+	background-color: var(--most);
+	color: var(--p);
+	width: 100%;
+	box-sizing: border-box;	
+	border-bottom: 2px var(--less) solid;
+}
+#silver_offer p:hover{
+	background-color: #474790;
+    color: orange;
+}
+#silver_offer #silver_p5{
+	background-color: rgb(180,30,10);
+}
+/************************************
+           .golden_offer
+************************************/
+#golden_offer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	box-shadow: 10px 5px rgba(40,40,40,0.2);
+}
+#golden_offer_head{
+	background-color: white;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--less);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+#golden_offer p:hover{
+	background-color: #474790;
+    color: orange;
+}
+#golden_offer p{
+	font-weight: 900;
+	text-align: center;
+	height: 50px;
+	background-color: var(--most);
+	color: var(--p);
+	width: 100%;
+	box-sizing: border-box;	
+	border-bottom: 2px var(--less) solid;
+}
+/***************************************************************
+                      @media queries                           
+***************************************************************/
+@media screen and (max-width: 700px){
+	#offers{flex-direction: column-reverse; align-items: center;}
+	#free_offer{width: 90%;}#silver_offer{width: 90%;margin-bottom: 60px;}#golden_offer{width: 90%;margin-bottom: 60px;}
+}
