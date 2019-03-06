@@ -1,0 +1,40 @@
+/***************************************************************
+                            showcase                           
+***************************************************************/
+#classes_showcase{
+    background-color: white;
+    height: 300px;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#classes_showcase h1{
+    font-size: 42pt;
+	text-shadow: 5px 5px rgba(40,40,40,0.2);
+	padding: 35px;
+}
+#classes_little-info-lines{
+    display: inline-flex;
+}
+#classes_little-info-lines p{
+    margin: 10px 5px;
+    padding: 5px 20px;
+    font-size: 10pt;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    border: 1px var(--less) solid;
+	box-shadow: 10px 5px rgba(40,40,40,0.2);
+	border-radius: 2px;
+	background-color: var(--most);
+    color: var(--less);
+}
+/***************************************************************
+                         @media queries                           
+***************************************************************/
+@media screen and (max-width: 700px){
+	#classes_showcase{height: 250px;}
+	#classes_showcase h1{font-size: 32pt; text-shadow: 5px 5px rgba(40,40,40,0.2); padding: 15px;}
+	#classes_little-info-lines{flex-direction: column; width: 100%;}
+	#classes_little-info-lines p{padding: 10px 0px; width: 100%;text-align: center;font-size: 11pt;  margin: 0px;}
+}
